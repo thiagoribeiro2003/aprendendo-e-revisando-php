@@ -49,10 +49,12 @@ echo $vetor["ano"];
 echo "<hr>";
 
 
-// matrizes = arrays multidimensionais
-// $clube["RS"] ["PortoAlegre"] = "Grêmio";
-// $clube["MG"] ["NovaLima"] = "Vila Nova";
-// $clube["SP"] ["SaoPaulo"] = "São Paulo";
+// matrizes = arrays bidimensionais
+$clube["RS"] ["PortoAlegre"] = "Grêmio";
+$clube["MG"] ["NovaLima"] = "Vila Nova";
+$clube["SP"] ["SaoPaulo"] = "São Paulo";
+echo $clube["SP"]["SaoPaulo"];
+echo"<hr>";
 
 
 // array com mais de duas dimensões
