@@ -16,7 +16,7 @@
     <li>Operadores de comparação</li>
     <li>Operadores de atribuição</li>
     <li>Operadores lógicos</li>
-    <li>Operador ternário</li> kok
+    <li>Operador ternário</li>
 </ul>
 </body>
 </html>
