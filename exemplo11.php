@@ -24,20 +24,6 @@
 <hr>
 
 
-<h2>Operadores Aritméticos</h2>
-<ul>
-    <li><strong>+</strong> (Adição).</li>
-    <li><strong>-</strong> (Subtração).</li>
-    <li><strong>*</strong> (Multiplicação).</li>
-    <li><strong>/</strong> (Divisão).</li>
-    <li><strong>%</strong> (Resto da divisão).</li>
-</ul>
-
-<?php 
-// Operadores Aritméticos
-?>
-
-
 <h2>Pré e Pós-incremento</h2>
 <ul>
     <li><strong>-oper</strong> (Troca o sinal do operando).</li>
@@ -60,6 +46,25 @@ echo "res1 = $res1<br>
       res2 = $res2<br>
       res3 = $res3<br>";
 ?>
+
+
+
+
+<h2>Operadores Aritméticos</h2>
+<ul>
+    <li><strong>+</strong> (Adição).</li>
+    <li><strong>-</strong> (Subtração).</li>
+    <li><strong>*</strong> (Multiplicação).</li>
+    <li><strong>/</strong> (Divisão).</li>
+    <li><strong>%</strong> (Resto da divisão).</li>
+</ul>
+
+<?php 
+// Operadores Aritméticos
+?>
+
+
+
 
 
 <h2>Operadores Binários</h2>
@@ -91,7 +96,7 @@ echo $resultado2;
 ?>
 
 
-<h2>Operadores de comparação</h2>
+<h2>Operadores de Comparação</h2>
 <ul>
 <li><strong>op1 == op2</strong> (Verdadeiro se op1 <strong>for igual a</strong> op2).</li>
 <li><strong>op1 === op2</strong> (Verdadeiro se op1 for <strong>idêntico a</strong> op2).</li>
@@ -107,7 +112,7 @@ echo $resultado2;
 ?>
 
 
-<h2>Operadores de atribuição</h2>
+<h2>Operadores de Atribuição</h2>
 <ul>
     <li><strong>op1 = op2</strong> (op1 recebe o valor de op2).</li>
     <li><strong>op1 += op2</strong> (Equivale a op1 = op1 + op2).</li>
@@ -138,7 +143,7 @@ echo $soma;
 ?>
 
 
-<h2>Operadores lógicos</h2>
+<h2>Operadores Lógicos</h2>
 <ul>
     <li><strong>!op1</strong> (Verdadeiro se op1 for falso).</li>
     <li><strong>op1 AND op2</strong> (Verdadeiro se op1 E op2 forem Verdadeiros).</li>
@@ -149,7 +154,32 @@ echo $soma;
 
 </ul>
 
-   
+<?php
+// Operador Lógico
+
+$nome = "Thiago";
+$email = "thiago123";
+$cpf = "";
+
+if (empty($nome) OR empty($email) OR empty($cpf)) {
+    echo "Você deve preencher os campos nome, email, e CPF!";
+}
+
+
+// Faz parte do operador ternário
+$frequencia = 0.70;
+$nota = 4;
+?>
+
+
+<h2>Operador Ternário</h2>
+<ul>
+    <li><strong>cond ? exp1 : exp2</strong> (Uma forma abreviada de usar o comando condicional <strong>if</strong>).</li>
+     <li> Exemplo: </li>
+</ul>
+<p><?=$nota = ($frequencia >= 0.75) ? ($nota+2) : ($nota-2)?></p>
+<?php
+echo $nota;?>
 </table>
 </body>
 </html>
