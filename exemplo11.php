@@ -7,6 +7,9 @@
     <title>Operadores</title>
 </head>
 <body>
+    <style>
+    body {font-size: 25px; font-family: arial; }
+    </style>
 <h1>Operadores</h1> 
 <h2>Tipos de Operadores</h2>
 <ul>
@@ -16,6 +19,32 @@
     <li>Operadores de atribuição</li>
     <li>Operadores lógicos</li>
     <li>Operador ternário</li>
+    <br>
+</ul>
+<hr>
+
+
+<h2>Operadores Aritméticos</h2>
+<ul>
+    <li><strong>+</strong> (Adição).</li>
+    <li><strong>-</strong> (Subtração).</li>
+    <li><strong>*</strong> (Multiplicação).</li>
+    <li><strong>/</strong> (Divisão).</li>
+    <li><strong>%</strong> (Resto da divisão).</li>
+</ul>
+
+<?php 
+// Operadores Aritméticos
+?>
+
+
+<h2>Pré e Pós-incremento</h2>
+<ul>
+    <li><strong>-oper</strong> (Troca o sinal do operando).</li>
+    <li><strong>++oper</strong> (Pré-incremento. Primeiro incrementa o valor do operando e depois realiza a operação).</li>
+    <li><strong>--oper</strong> (Pré-decremento. Primeiro decrementa o valor do operando e depois realiza a operação).</li>
+    <li><strong>oper++</strong> (Pós-incremento. Primeiro realiza a operação e depois incrementa o operando).</li>
+    <li><strong>oper--</strong> (Pós-decremento. Primeiro realiza a operação e depois decrementa o operando).</li>
 </ul>
 
 <?php
@@ -30,15 +59,71 @@ echo "a = $a<br> b = $b<br> c = $c<br><br>";
 echo "res1 = $res1<br> 
       res2 = $res2<br>
       res3 = $res3<br>";
-echo "<hr>";
 ?>
+
+
+<h2>Operadores Binários</h2>
+<ul>
+    <li><strong>~op1</strong> (Inverte os bits de op1).</li>
+    <li><strong>op1 & op2</strong> (Operação E(AND) bit a bit).</li>
+    <li><strong>op1 | op2</strong> (Operação OU(OR) bit a bit).</li>
+    <li><strong>op1 ^ op2</strong> (Operação OU exclusivo (XOR)).</li>
+    <li><strong>op1 >> n</strong> (Desloca op1 n bits à direita).</li>
+    <li><strong>op1 << n</strong> (Desloca op1 n bits à esquerda).</li>
+</ul>
 
 <?php
 //Operadores Binários
+
+//Exemplo 1 
 $num = 14;
 $deslocado = $num >> 1;  // >> desloca 1 bit para direita
 echo $deslocado;
+echo "<br>";
+
+//Exemplo 2
+$num = 15;
+$resultado1 = $num >> 1;
+$resultado2 = $num <<2;
+echo $resultado1;
+echo "<br>";
+echo $resultado2;
 ?>
 
+
+<h2>Operadores de comparação</h2>
+<ul>
+<li><strong>op1 == op2</strong> (Verdadeiro se op1 <strong>for igual a</strong> op2).</li>
+<li><strong>op1 === op2</strong> (Verdadeiro se op1 for <strong>idêntico a</strong> op2).</li>
+<li><strong>op1 >= op2</strong> (Verdadeiro se op1 for <strong>maior ou igual a</strong> op2).</li>
+<li><strong>op1 <= op2</strong> (Verdadeiro se op1 for <strong>menor ou igual a</strong> op2).</li>
+<li><strong>op1 != op2</strong> (Verdadeiro se op1 for <strong>diferente de</strong> op2).</li>
+<li><strong>op1 <> op2</strong> (Também serve para <strong>representar diferença</strong>).</li>
+<li><strong>op1 > op2</strong> (Verdadeiro se op1 <strong>for maior que</strong> op2).</li>
+<li><strong>op1 < op2</strong> (Verdadeiro se op1 for <strong>menor que</strong> op2).</li>
+</ul>
+<?php
+//Operadores de comparação
+?>
+
+
+<h2>Operadores de atribuição</h2>
+<ul>
+    <li><strong>op1 = op2</strong> (op1 recebe o valor de op2).</li>
+    <li><strong>op1 += op2</strong> (Equivale a op1 = op1 + op2).</li>
+    <li><strong>op1 -= op2</strong> (Equivale a op1 = op1 - op2).</li>
+    <li><strong>op1 *= op2</strong> (Equivale a op1 = op1 * op2).</li>
+    <li><strong>op1 /= op2</strong> (Equivale a op1 = op1 / op2).</li>
+    <li><strong>op1 .= op2</strong> (Concatenação: equivale a op1 = op1.op2.).</li>
+    <li><strong>op1 %= op2</strong> (Equivale a op1 = op1 % op2).</li>
+    <li><strong>op1 <<= op2</strong> (Equivale a op1 = op1 << op2).</li>
+    <li><strong>op1 >>= op2</strong> (Equivale a op1 = op1 >> op2).</li>
+    <li><strong>op1 &= op2</strong> (Equivale a op1 = op1 & op2).</li>
+    <li><strong>op1 |= op2</strong> (Equivale a op1 = op1 | op2).</li>
+    <li><strong>op1 ^= op2</strong>< (Equivale a op1 = op1 ^ op2).</li>
+</ul>
+
+   
+</table>
 </body>
 </html>
