@@ -137,6 +137,18 @@ $soma %= 100; // 900 % 100 = 0 ($soma fica com 0);
 echo $soma;
 ?>
 
+
+<h2>Operadores lógicos</h2>
+<ul>
+    <li><strong>!op1</strong> (Verdadeiro se op1 for falso).</li>
+    <li><strong>op1 AND op2</strong> (Verdadeiro se op1 E op2 forem Verdadeiros).</li>
+    <li><strong>op1 OR op2</strong> (Verdadeiro se op1 OU op2 forem verdadeiros).</li>
+    <li><strong>op1 XOR op2</strong> (Verdadeiro se só op1 ou só op2 for verdadeiro).</li>
+    <li><strong>op1 && op2 </strong> (Verdadeiro se op1 E op2 forem verdadeiros).</li>
+    <li><strong>op1 || op2</strong> (Verdadeiro se op1 OU op2 forem verdadeiros).</li>
+
+</ul>
+
    
 </table>
 </body>
