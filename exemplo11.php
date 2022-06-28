@@ -123,6 +123,20 @@ echo $resultado2;
     <li><strong>op1 ^= op2</strong>< (Equivale a op1 = op1 ^ op2).</li>
 </ul>
 
+<?php
+//Operadores de atribuição
+
+$soma = 0;
+$valor1 = 10;
+$valor2 = 20;
+$valor3 = 30;
+$soma += $valor1; // 0 + 10 = 10 ($soma fica com 10)
+$soma += $valor2; // 10 + 20 = 30 ($soma fica com 30)
+$soma *= $valor3; // 30 * 30 = 900 ($soma fica com 900);
+$soma %= 100; // 900 % 100 = 0 ($soma fica com 0);
+echo $soma;
+?>
+
    
 </table>
 </body>
