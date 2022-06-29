@@ -174,7 +174,8 @@ $nota = 4;
 
 <h2>Operador Ternário</h2>
 <ul>
-    <li><strong>cond ? exp1 : exp2</strong> (Uma forma abreviada de usar o comando condicional <strong>if</strong>).</li>
+    
+<li><strong>cond ? exp1 : exp2</strong> (Uma forma abreviada de usar o comando condicional <strong>if</strong>).</li>
      <li> Exemplo: </li>
 </ul>
 <p><?=$nota = ($frequencia >= 0.75) ? ($nota+2) : ($nota-2)?></p>
