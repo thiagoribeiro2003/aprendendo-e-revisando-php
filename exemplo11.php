@@ -173,14 +173,99 @@ $nota = 4;
 
 
 <h2>Operador Ternário</h2>
-<ul>
-    
-<li><strong>cond ? exp1 : exp2</strong> (Uma forma abreviada de usar o comando condicional <strong>if</strong>).</li>
-     <li> Exemplo: </li>
+<ul>   
+    <li><strong>cond ? exp1 : exp2</strong> (Uma forma abreviada de usar o comando condicional <strong>if</strong>).</li>
+    <li> Exemplo: </li>
 </ul>
-<p><?=$nota = ($frequencia >= 0.75) ? ($nota+2) : ($nota-2)?></p>
-<?php
-echo $nota;?>
+
+    <p><?=$nota = ($frequencia >= 0.75) ? ($nota+2) : ($nota-2)?></p>
+    <?php
+        echo $nota;
+        echo "<hr>";
+    ?>
+
+<h2>Precedência de Operadores</h2>
+<ul>
+    <li>
+        <strong>- ! ~ ++ --</strong> (Negativo, não lógico, inversão de bits, incremento e decremento).
+    </li>
+
+    <li>
+        <strong>* / %</strong> (Multiplicação, divisão e resto da divisão).
+    </li>
+
+    <li>
+        <strong>+ - .</strong> (Adição, subtração e concatenação).
+    </li>
+
+    <li>
+        <strong><< >></strong> (Deslocamentos binários).
+    </li>
+
+    <li>
+        <strong>> < >= <=</strong> (Maior, menor, maior ou igual, menor ou igual).
+    </li>
+
+    <li>
+        <strong>== != <></strong> (Igual e diferente).
+    </li>
+
+    <li>
+        <strong>&</strong> (AND binário).
+    </li>
+
+    <li>
+        <strong>^</strong> (XOR binário).
+    </li>
+
+    <li>
+        <strong>|</strong> (OR binário).
+    </li>
+
+    <li>
+        <strong>&&</strong> (AND lógico).
+    </li>
+
+    <li>
+        <strong>||</strong> (OR lógico).
+    </li>
+
+    <li>
+        <strong>?:</strong> (Operador ternário).
+    </li>
+
+    <li>
+        <strong>= += -= *= /= %= &= ~= <<= >>= ^=</strong> (Operadores de atribuição).
+    </li>
+
+    <li>
+        <strong>AND</strong> (AND lógico (de menor prioridade)).
+    </li>
+
+    <li>
+        <strong>XOR</strong> (XOR lógico (de menor prioridade)).
+    </li>
+
+    <li>
+        <strong>OR</strong> (OR lógico (de menor prioridade)).
+    </li>
+</ul>
+
+<?php 
+echo"<br>";
+$num = 5;
+$resultado = 8 + 3 * 2 + ++$num;
+echo "$num <br>";
+echo "$resultado <br>";
+
+echo "<hr>";
+
+$num = 7;
+$resultado = 8 * $num % 2;
+echo $resultado;
+?>
+
+
 </table>
 </body>
 </html>
