@@ -100,7 +100,6 @@ switch ($numero)
          echo "<p>O número não é 1, 2 e 3 (SWITCH)</p> <br>";
          break;
 }
-
 ?>
 
 <?php
