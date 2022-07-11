@@ -10,9 +10,8 @@
 <h1>Comandos de Repetição</h1> 
 <hr>
 
-<h2>while (while primeiro verifica e depois executa)</h2>
-<h3>while(enquanto)</h3>
-<p><strong>Sintaxe do <em>while</em>:</strong></p>
+<h2>while - enquanto (while primeiro verifica e depois executa)</h2>
+<h3><strong>Sintaxe do <em>while</em>:</strong></h3>
 <p>
     while(<em>exp</em>) <br>
     { <br>
@@ -31,9 +30,10 @@ while($count<=100)
 ?>
 <hr>
 
-<h2>do...while</h2>
-<h3>do...while (do...while primeiro executa e depois verifica)</h3>
-<p><strong>Sintaxe do <em>do...while</em>:</strong></p>
+
+ 
+<h2>do...while (do...while primeiro executa e depois verifica)</h2>
+<h3><strong>Sintaxe do <em>do...while</em>:</strong></h3>
 <p>
     do <br>
     { <br>
@@ -50,6 +50,11 @@ do
     $numero++;
 } while ($numero<4);
 ?>
+<hr>
+
+
+<h2>for</h2>
+<h3></h3>
 
 </body>
 </html>
