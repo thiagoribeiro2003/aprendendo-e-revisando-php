@@ -138,7 +138,7 @@ echo "<hr>";
     }
 </p>
 
-<p>Exemplo <strong>(foreach)</strong>:</p>
+<p><strong>Exemplo <em>(foreach)</em></strong>:</p>
 <?php
 $vetor = array (1, 2, 3, 4);
 foreach ($vetor as $v)
@@ -156,8 +156,6 @@ foreach($a as $chave => $valor)
     print "\$a[$chave] => $valor. <br>";
 }
 ?>
-
-
 
 
 <hr>
@@ -187,9 +185,46 @@ echo "<hr>";
 $numero = 1;
 do {
     echo $numero++;
-} while($numero<11)
+} while($numero<11);
 
 echo "<br>";
+echo "<hr>";
+?>
+
+<h1>Controlando o Fluxo de Execução</h1>
+<hr>
+
+<h2>break - parar</h2>
+<p><strong>Exemplo usando o comando <em>break</em>:</strong></p>
+<?php
+$k = 1;
+while($k<20){
+    if($k == "sair"){
+        break;
+    }
+    echo " $k,";
+    $k++;
+}
+?>
+
+<p><strong>Exemplo usando o comando <em>break</em> com um argumento numérico opcional:</strong></p>
+<?php
+$i = 0;
+$k = 0;
+while ($k < 10)
+{
+    $i++;
+    $k++;
+    while ($i < 20) 
+    {
+        if($i==10){
+            echo "Encerrando o primeiro while...<br>";
+            break;
+            echo "Essa linha não vai ser impressa!!!";
+        }
+    }
+}
 ?>
 </body>
 </html>
+
