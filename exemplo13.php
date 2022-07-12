@@ -209,20 +209,19 @@ while($k<20){
 
 <p><strong>Exemplo usando o comando <em>break</em> com um argumento numérico opcional:</strong></p>
 <?php
-$i = 0;
-$k = 0;
-while ($k < 10)
+for ($i=0, $k=0; $i<10, $k<20; $i++, $k++)
 {
-    $i++;
-    $k++;
-    while ($i < 20) 
-    {
-        if($i==10){
-            echo "Encerrando o primeiro while...<br>";
-            break;
-            echo "Essa linha não vai ser impressa!!!";
-        }
+    if($i == 10){
+        
+        echo " Encerrando o primeiro while...<br>";
+        break;
+        echo "Essa linha não vai ser impressa!!! ";
+    } elseif ($i == 15){
+        echo " Encerrando os dois whiles...";
+        break;
     }
+
+    echo " $i";
 }
 ?>
 </body>
