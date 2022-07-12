@@ -33,7 +33,7 @@ while($count<=100)
 
  
 <h2>do...while (do...while primeiro executa e depois verifica)</h2>
-<h3><strong>Sintaxe do <em>do...while</em>:</strong></h3>
+<h3>Sintaxe do <em>do...while</em>:</h3>
 <p>
     do <br>
     { <br>
@@ -54,7 +54,34 @@ do
 
 
 <h2>for</h2>
-<h3></h3>
+<h3>Sintaxe do <em> for</em>:</h3>
+<p>
+    for ( inicialização; condição; operador) <br>
+    { <br>
+        <em>comandos</em> <br>
+    }
+</p>
+
+<p><strong>Exemplo <em>(for)</em>:</strong></p>
+<?php
+// fazendo um incremento
+for ($num = 1; $num < 20; $num++)
+{
+echo " $num,";
+}
+echo "<br>"
+?>
+
+<?php
+// fazendo um decremento
+echo "O valor é";
+for ($cont = 10; $cont > 0; $cont--)
+{
+    echo " $cont,";
+}
+
+echo " ...FIM";
+?>
 
 </body>
 </html>
