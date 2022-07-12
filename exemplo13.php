@@ -56,10 +56,16 @@ do
 <h2>for</h2>
 <h3>Sintaxe do <em> for</em>:</h3>
 <p>
-    for ( inicialização; condição; operador) <br>
+    for (inicialização; condição; operador) <br>
     { <br>
         <em>comandos</em> <br>
-    }
+    } <br> <br>
+
+    ou <br><br>
+
+    for(inicialização; condição; operador): <br>
+       <em>comandos</em> <br>
+    endfor;
 </p>
 
 <p><strong>Exemplo <em>(for)</em>:</strong></p>
@@ -110,8 +116,80 @@ for ($i = 0, $k = 10; $i < 11, $k > 0; $i++, $k--)
     if($i==$k){
         echo " (os valores são iguais!)";
     }
-    echo "<br>";  
+    echo "<br>"; 
 }
+echo "<hr>"; 
+?>
+
+
+<h2>foreach - para cada</h2>
+<h3>Sintaxe do <em>foreach</em>: </h3>
+<p>
+    foreach (<em>$nome_array</em> as <em>$elemento</em>) <br>
+    {<br>
+        comandos <br>
+    }<br> <br>
+
+    ou <br><br>
+
+    foreach (<em>$nome_array</em> as <em>$chave => $valor</em>) <br>
+    {<br>
+        comandos <br>
+    }
+</p>
+
+<p>Exemplo <strong>(foreach)</strong>:</p>
+<?php
+$vetor = array (1, 2, 3, 4);
+foreach ($vetor as $v)
+{
+    print "O valor atual do vetor é $v. <br>";
+}
+
+
+echo "<br>";
+
+
+$a = array ("um" => 1, "dois" => 2, "tres" => 3);
+foreach($a as $chave => $valor)
+{
+    print "\$a[$chave] => $valor. <br>";
+}
+?>
+
+
+
+
+<hr>
+<p>De um ate 10 com <strong>for</strong>:</p>
+<?php
+for ($numero = 1; $numero<11; $numero++)
+{
+    echo " $numero";
+}
+echo "<br>";
+echo "<hr>";
+?>
+
+<p>De um ate 10 com <strong>while</strong>:</p>
+<?php
+$numero = 1;
+while ($numero<11)
+{
+    echo $numero++;
+}
+echo "<br>";
+echo "<hr>";
+?>
+
+<p>De 1 até 10 com <strong>do...while</strong>:</p>
+<?php
+$numero = 1;
+do {
+    echo $numero++;
+} while($numero<11)
+
+echo "<br>";
 ?>
 </body>
 </html>
