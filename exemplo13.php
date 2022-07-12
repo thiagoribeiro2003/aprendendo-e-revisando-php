@@ -98,10 +98,20 @@ for($i = 0; $i<2; $i++)
         echo "O elemento da posição $i,$k é ";
         echo $vetor [$i][$k]. "<br>";
     }
-}            
-
-
+}  
 ?>
 
+
+<?php
+// for utilizando mais de uma váriavel no parâmetro de inicialização
+for ($i = 0, $k = 10; $i < 11, $k > 0; $i++, $k--)
+{
+    echo "\$i vale $i e \$k vale $k";
+    if($i==$k){
+        echo " (os valores são iguais!)";
+    }
+    echo "<br>";  
+}
+?>
 </body>
 </html>
