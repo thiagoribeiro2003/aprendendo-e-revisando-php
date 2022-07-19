@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -223,6 +224,11 @@ for ($i=0, $k=0; $i<10, $k<20; $i++, $k++)
 
     echo " $i";
 }
+
+phpinfo();
+
+ 
+
 ?>
 </body>
 </html>
