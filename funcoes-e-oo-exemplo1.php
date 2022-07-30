@@ -56,5 +56,16 @@
     $nomeM = maiusculo($nome);
     echo "Meu nome é $nomeM";
     ?>
+
+<h2>Utilizando o return em um comando de saída</h2>
+<p>Exemplo:</p>
+    <?php
+    function triplo($numero){
+        $x = $numero * 3;
+        return $numero;
+    }
+    $numero = 5;
+    echo "O triplo de $numero é ". triplo($numero);
+    ?>
 </body>
 </html>
