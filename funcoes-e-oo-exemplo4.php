@@ -24,7 +24,6 @@
     }
 
     // Observe que a finção clubes() não recebe nenhum parâmetro, ela apenas é ativada e retorna um array para o ponto em que foi chamada
-     
     ?>
 </body>
 </html>
