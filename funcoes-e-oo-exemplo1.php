@@ -21,7 +21,8 @@
     <?php
     function somaValor($valor1, $valor2, $valor3){
     $soma = $valor1 + $valor2 + $valor3;
-    echo "$valor1 + $valor2 + $valor3 = $soma";
+    echo "A soma dos valores $valor1, $valor2 e $valor3 <br>";
+    echo "É $soma";
     }
 
     $n1 = 5;
