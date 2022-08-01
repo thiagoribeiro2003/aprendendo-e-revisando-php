@@ -51,7 +51,7 @@ for($i = 0; $i<sizeof($vetor); $i++){
     {continue;}else{}
     $num_par = $vetor[$i];
     echo "O número $num_par é par. <br>";
-}
+}  
 ?>
 
 </body>
