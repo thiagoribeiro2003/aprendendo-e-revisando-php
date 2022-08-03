@@ -1,11 +1,4 @@
 <?php
-$resultado = CPF::validar("511.119.178-09");
-var_dump($resultado);
-
-function CPF(){
-    return bool;
-}
-
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
