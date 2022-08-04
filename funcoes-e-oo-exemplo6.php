@@ -5,7 +5,7 @@ function cpf_errado(){
     
     for($j=0; $j<strlen($cpf); $j++){
         if(substr($cpf,$j,1)>="0" AND substr($cpf,$j,1)<="9")
-            $aux_cpf .= substr($cpf, $j,1);
+            $aux_cpf .= substr($cpf,$j,1);
         if(strlen($aux_cpf)!=11)
             $erro = true;
         else {
