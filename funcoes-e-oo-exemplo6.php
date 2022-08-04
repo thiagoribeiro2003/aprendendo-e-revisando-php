@@ -48,7 +48,6 @@ function cpf_errado(){
 <body>
 <h1>Criando função para validar CPF (Exemplo livro)</h1>
 <?php
-$cpf = 51111917809;
 if (cpf_errado($cpf)){
     echo "O CPF digitado é inválido";
     exit;
@@ -56,8 +55,7 @@ if (cpf_errado($cpf)){
 
 
 
-$meuCPF = 51111917809;
-echo cpf_errado($meuCPF);
+
 ?>
 </body>
 </html>
