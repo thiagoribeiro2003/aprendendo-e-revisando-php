@@ -47,15 +47,12 @@ function cpf_errado(){
 </head>
 <body>
 <h1>Criando função para validar CPF (Exemplo livro)</h1>
+
 <?php
 if (cpf_errado($cpf)){
     echo "O CPF digitado é inválido";
     exit;
 }
-
-
-
-
 ?>
 </body>
 </html>
