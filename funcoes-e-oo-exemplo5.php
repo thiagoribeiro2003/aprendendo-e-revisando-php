@@ -40,7 +40,7 @@ function retornaData(){
     <title>Document</title>
 </head>
 <body>
-    <h1>Função envolvendo a data atual</h1>
+    <h1>Função denvolvendo a data atual</h1>
     <?php
     // Chamando a função que esta no topo do código
      $hoje = retornaData();
