@@ -15,7 +15,6 @@ function nada( $b, $c, $a = 10){
         \$b vale $b<br>
         \$c vale $c";
 }
-
 nada(1,5);
 ?>
 
