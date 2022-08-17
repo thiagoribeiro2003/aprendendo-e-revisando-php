@@ -8,7 +8,13 @@
 </head>
 <body>
 <?php
+function nada( $b, $c, $a = 10){
+    echo "\$a vale $a<br>
+        \$b vale $b<br>
+        \$c vale $c";
+}
 
+nada(1,5);
 ?>
 
     
