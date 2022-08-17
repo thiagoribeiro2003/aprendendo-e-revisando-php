@@ -7,6 +7,8 @@
     <title></title>
 </head>
 <body>
+<h1>Passagem de parâmetro</h1>
+<h2>Exemplo de passagem de parâmetro:</h2>
 <?php
 function nada( $b, $c, $a = 10){
     echo "\$a vale $a<br>
