@@ -53,6 +53,8 @@ if (cpf_errado($cpf)){
     echo "O CPF digitado é inválido";
     exit;
 }
+
 ?>
+
 </body>
 </html>
